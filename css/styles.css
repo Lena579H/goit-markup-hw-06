@@ -218,23 +218,6 @@ button {
 }
 
 /*mob menu*/
-.mob-menu-close {
-  border-radius: 50%;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  height: 24px;
-  width: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 24px;
-  top: 24px;
-  margin-left: auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 0;
-}
 
 .mobile-menu {
   position: fixed;
@@ -265,41 +248,73 @@ button {
   height: 100%;
 }
 
-/*
-.mobile-menu-list {
+.mob-menu-close {
+  border-radius: 50%;
+  background-color: #e5e5e5;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 24px;
+  width: 24px;
   display: flex;
-  flex-direction: column;
-  gap: 40px;
-}*/
-
-.navigation-item-mob {
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  margin-left: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
 }
 
-.address-item-mob {
-  font-weight: 500;
-  font-size: 20px;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #434455;
-  gap: 24px;
-  margin-bottom: 26px;
+.modal-btn-close-icon {
+  fill: black;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-menu-nav {
   margin-bottom: auto;
 }
 
+.navigation-list-mob {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.navigation-link-mob.studio {
+  color: #404bbf;
+}
+
+.navigation-link-mob {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.address-list-mob {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.address-link-mob.telcolor {
+  color: #4d5ae5;
+}
+
+.address-link-mob {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  font-style: normal;
+}
+
 .social-list-mob {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
   gap: 40px;
 }
 
