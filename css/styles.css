@@ -836,15 +836,15 @@ button {
   margin-bottom: 16px;
   font-weight: 700;
   font-size: 18px;
-  width: 115px;
   height: 24px;
-  align-items: left;
-  text-align: left;
+  align-items: center;
+  text-align: center;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
   gap: 0px;
+  justify-content: center;
 }
 
 .logo-footer .logo-part {
@@ -868,6 +868,7 @@ button {
   letter-spacing: 0.02em;
   color: #fff;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .name-social-footer {
@@ -927,7 +928,7 @@ button {
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin: 16px auto 0 auto;
+  margin: 0 auto;
 }
 
 .footer-form-button:hover,
@@ -953,6 +954,7 @@ button {
   outline: transparent;
   min-width: 288px;
   padding: 8px 16px;
+  margin-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -969,7 +971,10 @@ button {
   }
 
   .page-logo {
-    text-align: left;
+    justify-content: left;
+  }
+  .logo-footer {
+    justify-content: left;
   }
 
   .name-social-footer {
@@ -979,7 +984,6 @@ button {
   .footer-social {
     align-items: left;
     display: flex;
-    align-self: center;
     flex-direction: column;
   }
 
@@ -1003,20 +1007,24 @@ button {
 
   .footer-form-name {
     text-align: left;
+    margin: 16px 0;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .footer-container {
     display: flex;
-    align-items: baseline;
     justify-content: left;
     flex-direction: row;
+    flex-wrap: nowrap;
     gap: unset;
   }
 
   .page-footer {
     align-items: left;
+  }
+  .logo-footer {
+    justify-content: left;
   }
 
   .page-logo {
